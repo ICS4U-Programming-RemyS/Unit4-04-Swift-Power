@@ -58,12 +58,13 @@ do {
         let currentLine = inputLines[position]
         let currentLineArray = currentLine.components(separatedBy: " ")
 
+        // Increment the position variable
+        position += 1
+
         // Check if the line does not have 2 indexes
         if currentLineArray.count != 2 {
             // Write an error message to the output string
             outputStr += "Invalid: \(currentLine) is not a valid base and exponent.\n"
-            // Increment the position
-            position += 1
             // Continue to the next iteration
             continue
         } else {
@@ -71,8 +72,6 @@ do {
             guard let base = Int(currentLineArray[0]) else {
                 // Write an error message to the output string
                 outputStr += "Invalid: \(currentLine) is not a valid base and exponent.\n"
-                // Increment the position
-                position += 1
                 // Continue to the next iteration
                 continue
             }
@@ -81,8 +80,6 @@ do {
             guard let exponent = Int(currentLineArray[1]) else {
                 // Write an error message to the output string
                 outputStr += "Invalid: \(currentLine) is not a valid base and exponent.\n"
-                // Increment the position
-                position += 1
                 // Continue to the next iteration
                 continue
             }
@@ -91,8 +88,6 @@ do {
             if exponent < 0 {
                 // Write an error message to the output string
                 outputStr += "Invalid: \(currentLine) is not a valid base and exponent.\n"
-                // Increment the position
-                position += 1
                 // Continue to the next iteration
                 continue
             } else {
@@ -104,8 +99,6 @@ do {
             }
 
         }
-        // Increment the position
-        position += 1
     }
 
     // Write to output.txt
