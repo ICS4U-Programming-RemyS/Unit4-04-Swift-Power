@@ -1,0 +1,8 @@
+4^5 = 1024
+Invalid: Remy 3 is not a valid base and exponent.
+Invalid: 2 Hello is not a valid base and exponent.
+-4^3 = -64
+Invalid: 4 -5 is not a valid base and exponent.
+Invalid:  is not a valid base and exponent.
+Invalid: 8 is not a valid base and exponent.
+Invalid: 2 5 7 is not a valid base and exponent.
